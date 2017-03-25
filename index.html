@@ -59,30 +59,26 @@
 				<div class="big-title">
 					<h1>Celebeaty</h1>
 					<h2>A fun website dedicated to teaching beginners to develop a knowledge of playing various instruments.</h2>
-					<p class="lead">Made by <a href="https://github.com/imaudrey">imaudrey</a> and <a href="https://github.com/tejashah88">tejashah88</a>.</p>
+					<!-- <p class="lead">Made by <a href="https://github.com/imaudrey">Audrey Im</a> and <a href="https://github.com/tejashah88">Tejas Shah</a>.</p> -->
 				</div>
 
-				<div class="instruction-box" data-position="auto" data-step="3" data-intro="You can check out the syntax for generating the utterances here.">
+				<!-- <div class="instruction-box" data-position="auto" data-step="3" data-intro="You can check out the syntax for generating the utterances here.">
 					<h2 style="text-align: center;">Syntax for utterance generator<button class="btn btn-link btn-lg" type="button" data-toggle="collapse" data-target="#helpCollapse" aria-expanded="false" aria-controls="helpCollapse">Toggle</button></h2>
 
 					<div class="collapse" id="helpCollapse">
 						<div class="card card-block">
 							<p>The syntax is very similar to the original syntax for making the utterances. You can check it out <a href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface#h2_sample_utterances">here</a>. The only difference is that the new syntax makes it easier to create variations of utterances with parenthesis groups.</p>
-							<pre class="code-area">
-Input: "(hello|hi) world"
-Output: "hello world", "hi world"</pre>
+							<pre class="code-area"></pre>
 
 							<p>You also can specify the parenthesis group to be 'optional', with the '|' symbol.</p>
-							<pre class="code-area">
-Input: "I (love|hate) (|big) dogs"
-Output: "I love big dogs", "I love dogs", "I hate big dogs", "I hate dogs"</pre>
+							<pre class="code-area"></pre>
 							<p>Note that <code class="code-area-inline">(|big|small)</code> would work the same as <code class="code-area-inline">(big|small)</code>. I'm working a fix at the moment.</p>
 							<p>If you want more examples, the original author of the node module, <a href="https://github.com/miguelmota">miguelmota</a>, has some <a href="https://github.com/miguelmota/intent-utterance-expander#usage">here</a>!</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="container">
+				<!-- <div class="container">
 					<div class="col-xs-4" data-position="auto" data-step="1" data-intro="This section allows you to create intents in order to organize your utterances to each intent.">
 						<h3 class="list-group-item text-center">Intents</h3>
 						<br>
@@ -107,22 +103,22 @@ Output: "I love big dogs", "I love dogs", "I hate big dogs", "I hate dogs"</pre>
 						<br>
 						<textarea disabled id="codeArea" type="textarea" class="form-control" rows="20"></textarea>
 					</div>
-				</div>
+				</div> -->
 
-				<div id="finalResults" class="container" style="display:none">
+				<!-- <div id="finalResults" class="container" style="display:none">
 					<h2 class="list-group-item text-center">Final Results</h2>
 					<div class="container" style="padding:15px">
 						<code id="resultUtterances" class="code-area"></code>
 					</div>
 					<button id="copyUtterances" class="btn btn-info btn-lg btn-block" data-clipboard-target="#resultUtterances" type="button">Copy!</button>
-				</div>
+				</div> -->
 
 			</div>
 		</div>
 
 		<div class="container">
 			<footer>
-				<p>Created with &hearts; and lots of code by Tejas Shah (<a href="https://github.com/tejashah88">tejashah88</a>)</p>
+				<p>Created with &hearts; and lots of code by Audrey Im (<a href="https://github.com/imaudrey">imaudrey</a>) and Tejas Shah (<a href="https://github.com/tejashah88">tejashah88</a>)</p>
 			</footer>
 		</div>
 		<!-- /.container -->
@@ -136,7 +132,7 @@ Output: "I love big dogs", "I love dogs", "I hate big dogs", "I hate dogs"</pre>
 		<!-- intro.js -->
 		<script src="js/intro.min.js"></script>
 
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 			var intents = new Map();
 			var intentButtons;
 			var selectedIntent = "undefined";
@@ -230,7 +226,7 @@ Output: "I love big dogs", "I love dogs", "I hate big dogs", "I hate dogs"</pre>
 			})
 
 			$('#introModal').modal('show');
-		</script>
+		</script> -->
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
