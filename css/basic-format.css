@@ -1,0 +1,25 @@
+body {
+	padding-top: 50px;
+}
+
+.big-title {
+	padding: 40px 15px 10px 15px;
+	text-align: center;
+}
+
+.instruction-box {
+	text-align: left;
+}
+
+.code-area {
+	background-color: white;
+	color: black;
+	padding: 10px;
+	display: block;
+}
+
+.code-area-inline {
+	background-color: white;
+	color: black;
+	display: inline;
+}
