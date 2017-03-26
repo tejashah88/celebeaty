@@ -1,5 +1,5 @@
 from pygame.locals import *
-def MusicNotes():
+def MusicNotesStar():
     import pygame,sys
     screen = pygame.display.set_mode((700, 700))
     pygame.display.set_caption("MusicNoteSetup")
@@ -16,7 +16,7 @@ def MusicNotes():
     red= (255, 0, 0)
     pygame.init()
     pygame.mixer.init()
-    file = 'C:\\Users\\Audrey Im\\Desktop\\MusicCelebeaty\\trumpets.mp3'
+    file = 'C:\\Users\\Audrey Im\\Desktop\\MusicCelebeaty\\shooting_stars.mp3'
     pygame.mixer.music.load(file)
     pygame.mixer.music.play()
     time = pygame.time.Clock()
