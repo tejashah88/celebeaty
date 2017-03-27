@@ -1,4 +1,2 @@
 # celebeaty
-A fun website dedicated to teaching beginners to develop a knowledge of playing various instruments.
-
-Authors: I'm Audrey and Sajet Kumar
+A python app dedicated to teaching beginners to develop a knowledge of playing various instruments (via a Leap Motion).
