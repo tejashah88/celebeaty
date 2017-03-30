@@ -7,7 +7,7 @@
 ################################################################################
 
 import os, sys, inspect, thread, time
-#sys.path.insert(0, "lib/x64/Leap")
+
 src_dir = os.path.dirname(inspect.getfile(inspect.currentframe()))
 lib_dir = os.path.abspath(os.path.join(src_dir, './lib'))
 sys.path.insert(0, lib_dir)
@@ -39,8 +39,7 @@ class SampleListener(Leap.Listener):
         # Get the most recent frame and report some basic information
         frame = controller.frame()
 
-        print("Frame id: %d, timestamp: %d, hands: %d, fingers: %d") % (
-              frame.id, frame.timestamp, len(frame.hands), len(frame.fingers))
+        print("Hands: %d, fingers: %d") % (len(frame.hands), len(frame.fingers))
 
         # Get hands
         for hand in frame.hands:
@@ -101,7 +100,6 @@ def main():
     try:
         while True:
             pass
-        #sys.stdin.readline()
     except KeyboardInterrupt:
         controller.remove_listener(listener)
     finally:

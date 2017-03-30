@@ -1,7 +1,7 @@
 import pygame, sys
 from pygame.locals import *
 from MusicNotesTrumpet import MusicNotesTrumpet
-from MusicNotesStars import MusicNotesStar
+from MusicNotesStars import MusicNotesStars
 def menu():
     pygame.init()
     playX=50
@@ -22,14 +22,16 @@ def menu():
     while True:
         pygame.display.update()
         PLAY=pygame.draw.rect(screen, (255, 255, 255), (playX, playY, 200, 45), 5)
+        #quit does not mean quit it is for start trumpet and start piano is for play
         QUIT=pygame.draw.rect(screen, (255, 255, 255), (quitx, quity, 200, 45), 5)
+        screen.blit(Logo, (280, 140))
         for event in pygame.event.get():
             if event.type==QUIT:
                     pygame.quit()
                     exit()
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                 if playX <= event.pos[0] <= playX+200 and playY <= event.pos[1] <= playY+45:
-                    MusicNotesStar()
+                    MusicNotesStars()
                 if quitx <= event.pos[0] <= quitx+200 and quity<= event.pos[0] <=quity+45:
                     MusicNotesTrumpet()
                     #exit()=quit()?
